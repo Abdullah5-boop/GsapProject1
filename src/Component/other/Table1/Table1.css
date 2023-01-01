@@ -1,0 +1,128 @@
+:root {
+    --table1height: 218px
+}
+
+.table1Contaier {
+    background-color: #1c1c1c;
+    box-sizing: border-box;
+    width: 99.1vw;
+    height: 100vh;
+    color: aliceblue;
+    padding-top: 50px;
+}
+
+.inner-table-containrer {
+
+    max-width: 1450px;
+    width: calc(100vw - 2rem);
+      margin: auto;
+    height: 100vh;
+  
+}
+
+.row1 {
+    height: var(--table1height);
+    width: 100%;
+    border-top: 1px solid ;
+    border-bottom: 1px solid #1c1c1c;
+    text-align: start;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+
+.rowimgdiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.rowimgdiv img {
+
+    object-fit: cover;
+    margin: auto;
+
+
+}
+
+.row1:nth-child(1) {
+    font-size: 40px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.row1 p
+{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    /* color: blue; */
+}
+
+.table1heading {
+    font-family: 'Syncopate', sans-serif;
+     display: inline-block;
+    /* text-align: start;  */
+    /* background-color: rgb(218, 143, 44); */
+    position: relative;
+
+}
+.table1heading::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin:bottom left ;
+    transition: all 1s ease-in;
+}
+.table1heading:hover::after{
+    transform: scaleX(1);
+    transform-origin:bottom left ;
+
+
+}
+.h1container{
+    width: 100%;
+    height: 60px;
+    /* border:1px solid #ffff; */
+    overflow: hidden;
+    color:bisque;
+}
+.handler{
+    display: inline-block;
+    /* background-color: aqua; */
+    position: relative;
+}
+.handler::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: beige;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left bottom;
+    transition: all 0.8s ease-in-out;
+}
+.handler:hover::after{
+    transform-origin: left bottom;
+    transform: scaleX(1);
+}
+
+.handler h1{
+    display: inline-block;
+    height: 50px;
+    background-color: aqua;
+    overflow: hidden;
+}
+@media only screen and (max-width: 1200px) {
+
+    /*Tablets [601px -> 1200px]*/
+    :root {
+        --table1height: 100vh
+    }
+}
