@@ -42,8 +42,10 @@ const Table1 = () => {
     }, [refresh])
 
     return (
-        <>
-            <div className='table1Contaier'>
+    
+            <div className='table1Contaier'
+            data-scroll-section
+            >
                 <div className='flex'>
                     <h1 className='text-start text-5xl ml-20 mb-20 table1heading'>Information</h1>
                 </div>
@@ -55,8 +57,9 @@ const Table1 = () => {
                             key={data.index}
                             data={data}></TableView>)}
                 </div>
+                
             </div>
-        </>
+   
     );
 };
 

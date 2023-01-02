@@ -32,28 +32,14 @@ const About = () => {
 
 
 
-    // useEffect(() => {
-    //     var splt = new SplitText("#abouText", {
-    //         type: 'lines',
-    //         linesClass: 'lineChildren'
-    //     });
-    // }, [])
-
-
-
-    // console.log(state ? "true" : "false")
-
-    // useEffect(() => {
-
-    //     TweenMax.staggerFrom([...contentref.current.children], 1, { opacity: 0, y: 44, ease: Power3.easeInOut }, 0.2)
-    //     TweenMax.staggerTo([...contentref.current.children], 1, { opacity: 1, y: 0, ease: Power3.easeInOut }, 0.2)
-
-    // }, [state])
+ 
 
     return (
         <>
 
-            <div className='aboutcontainer'>
+            <div className='aboutcontainer'
+            data-scroll-section
+            >
                 <section>
                     <h3 >About</h3>
                     <p
