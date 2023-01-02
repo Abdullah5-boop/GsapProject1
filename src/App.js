@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import LocomotiveScroll from "locomotive-scroll";
 import './Component/Hook/locamotive.css'
 import Temp1 from './Component/other/PhotoMask/Temp1';
+import Parallex from './Component/other/Parallex/Parallex';
 
 function App() {
   useEffect(() => {
@@ -25,9 +26,10 @@ function App() {
         data-scroll-container
       >
         <Banner></Banner>
-        <About></About>
+        {/* <About></About>
+        <Table1></Table1> */}
+        <Parallex></Parallex>
         <Photo1></Photo1>
-        <Table1></Table1>
        
       </div>
 
