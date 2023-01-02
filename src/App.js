@@ -26,10 +26,10 @@ function App() {
         data-scroll-container
       >
         <Banner></Banner>
-        {/* <About></About>
-        <Table1></Table1> */}
-        <Parallex></Parallex>
+        <About></About>
         <Photo1></Photo1>
+        <Table1></Table1>
+        <Parallex></Parallex>
        
       </div>
 
