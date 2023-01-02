@@ -34,8 +34,10 @@ const Banner = () => {
         TweenMax.staggerTo([...bannercontaier.current.children], 0.8, { y: 0 }, value)
     }, [])
     return (
-        <>
-            <section className='bannercontaier'>
+      
+            <section className='bannercontaier'
+            data-scroll-section
+            >
                 <div
 
                     className='bannerpg'>
@@ -69,7 +71,7 @@ const Banner = () => {
                 </div>
                 <div className='bannerphoto'>
                     <div className='innter-img-container'>
-                        <img src={img2} alt="" />
+                        <img className='' src={img2} alt="" />
                     </div>
                     <div className='innter-img-container'>
                         <img src={img1} alt="" />
@@ -79,7 +81,7 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
-        </>
+   
     );
 };
 

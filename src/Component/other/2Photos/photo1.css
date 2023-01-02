@@ -1,0 +1,31 @@
+.photo1-inner-container {
+    width: 100vw;
+    height: 150vh;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.photo1 {
+    width: 25vw;
+    height: 70vh;
+    background-color: aqua;
+    /* position:absolute; */
+   
+    
+}
+.photo2 {
+    width: 30vw;
+    height: 75vh;
+    background-color: rgb(225, 0, 255);
+
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: scale(1); */
+}
