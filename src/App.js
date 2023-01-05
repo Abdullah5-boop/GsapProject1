@@ -9,6 +9,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import './Component/Hook/locamotive.css'
 import Temp1 from './Component/other/PhotoMask/Temp1';
 import Parallex from './Component/other/Parallex/Parallex';
+import List1 from './Component/other/List1/List1';
+
 
 function App() {
   useEffect(() => {
@@ -30,6 +32,7 @@ function App() {
         <Photo1></Photo1>
         <Table1></Table1>
         <Parallex></Parallex>
+      <List1></List1>
        
       </div>
 
